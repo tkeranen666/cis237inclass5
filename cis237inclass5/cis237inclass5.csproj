@@ -50,6 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beverage.cs">
+      <DependentUpon>Cars2.tt</DependentUpon>
+    </Compile>
     <Compile Include="Car.cs">
       <DependentUpon>Cars.tt</DependentUpon>
     </Compile>
@@ -67,6 +70,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Cars.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Cars2.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cars2.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cars2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cars2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cars2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cars2.edmx</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +107,23 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Cars.edmx</DependentUpon>
       <LastGenOutput>Cars.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="Cars2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Cars2.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Cars2.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Cars2.edmx</DependentUpon>
+      <LastGenOutput>Cars2.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Cars2.edmx.diagram">
+      <DependentUpon>Cars2.edmx</DependentUpon>
+    </None>
+    <None Include="Cars2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Cars2.edmx</DependentUpon>
+      <LastGenOutput>Cars2.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
